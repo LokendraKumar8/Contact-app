@@ -15,7 +15,7 @@ const userSchema = mongoose.Schema({
         required: [true,"Please add the user password"],
     },    
 },{
-    timestamps: true,
+    timestamps: true,//This will automatically add createdAt and updatedAt fields to the documents.
 });   
        
-module.exports = mongoose.model("User", userSchema);//This will automatically add createdAt and updatedAt fields to the documents.
+module.exports = mongoose.model("User", userSchema);

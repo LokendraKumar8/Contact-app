@@ -1,4 +1,4 @@
-const asyncHandler = require("express-async-handler");
+const asyncHandler = require("express-async-handler");//to avoid try catch block in promise 
 const Contact = require("../models/contactModel");
 
 //@desc Get all contacts
