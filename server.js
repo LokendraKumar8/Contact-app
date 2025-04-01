@@ -16,6 +16,10 @@ app.get("/heloo",(req,res)=>{
 )
 app.use(errorHandler);
 
+app.get('/', (req, res) => {
+  return res.status(201).json({ msg: "Server is Live!!🚀" })
+})
+
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
